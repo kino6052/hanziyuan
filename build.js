@@ -6,7 +6,7 @@ import { marked } from 'marked';
 import ejs from 'ejs';
 
 const srcDir = 'src';
-const outDir = 'public';
+const outDir = 'docs';
 
 // Clean output directory
 await fs.emptyDir(outDir);
