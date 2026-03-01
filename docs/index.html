@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etymonline · Article Browser</title>
+    <link rel="stylesheet" href="./assets/style.css">
+    <style>
+      header {
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
+        margin: 0;
+        justify-content: center;
+        align-items: center;
+      }
+
+      h1, p {
+        width: fit-content;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+</head>
+<body>
+    <header class="site-header">
+        <h1>ETYMOLOGICON</h1>
+        <p>a catalogue of word origins & curious roots</p>
+    </header>
+
+    <div class="main-container">
+        <!-- Sidebar: tag tree -->
+        <div id="sidebar">
+            <h3>✧  browse by tag  ✧</h3>
+            <div id="tree"></div>
+        </div>
+
+        <!-- Main content: page list -->
+        <div id="content">
+            <h3>✧  articles  ✧</h3>
+            <div id="page-list"></div>
+        </div>
+    </div>
+
+    <!-- Embedded data (filled by build script) -->
+    <script>
+        window.__TAG_HIERARCHY__ = {"children":{"all":{"value":[{"title":"Etymology of 策略","url":"策略.html"},{"title":"Etymology of 勇敢","url":"勇敢.html"}]},"radicals":{"children":{"field":{"children":{"left":{"value":[{"title":"Etymology of 策略","url":"策略.html"}]}}},"bamboo":{"children":{"top":{"value":[{"title":"Etymology of 策略","url":"策略.html"}]}}},"strength":{"children":{"bottom":{"value":[{"title":"Etymology of 勇敢","url":"勇敢.html"}]}}},"hand with a whip":{"children":{"right":{"value":[{"title":"Etymology of 勇敢","url":"勇敢.html"}]}}}}},"word formation type":{"children":{"coordinated":{"value":[{"title":"Etymology of 策略","url":"策略.html"},{"title":"Etymology of 勇敢","url":"勇敢.html"}]}}}}};
+        window.__ALL_PAGES__ = [{"title":"Etymology of 策略","url":"策略.html"},{"title":"Etymology of 勇敢","url":"勇敢.html"}];
+    </script>
+    <!-- Collapsible tree logic -->
+    <script src="assets/tag-browser.js"></script>
+</body>
+</html>
